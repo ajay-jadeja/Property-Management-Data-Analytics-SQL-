@@ -91,7 +91,7 @@ Each file in this repository has a clear role in the data engineering and analyt
 * **What it does:** Contains production-grade SQL code written to solve **10 advanced real-world business problems**.
 * **Key Features:** Uses powerful data analysis tools like **Window Functions** (`SUM() OVER`, `LAG()`), **CTEs (Common Table Expressions)**, and complex multi-table `JOIN` operations to trace revenue leakage and rolling growth.
 
-### 📕 4. `Property_Management_SQL_Portfolio.pdf` (Executive Report)
+### 📕 4. [`Property_Management_SQL_Portfolio.pdf`](https://github.com/ajay-jadeja/Property-Management-Data-Analytics-SQL-/blob/main/Property_Management_SQL_Portfolio.pdf) (Executive Report)
 * **What it does:** A comprehensive, presentation-ready compilation of the entire project for quick review.
 * **Key Features:** Includes all 10 business problem statements, original source codes, expected output grids, and actionable management insights—no live database connection required to view.
 
