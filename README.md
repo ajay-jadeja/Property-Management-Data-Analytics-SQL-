@@ -76,8 +76,27 @@ The analytical suite in this project is built around solving these 10 distinct o
 
 ---
 
-## How to Run This Project
-1. Clone this repository to your local machine.
-2. Execute the `Schema_Setup.sql` script inside your SQL engine to build database layouts and relations.
-3. Import the sample dataset files into their respective tables.
-4. Run the queries inside `Business_Analysis_Queries.sql` to execute the full analytics engine.
+Markdown
+## 🚀 Quick Start Guide (MySQL)
+
+Follow these simple steps to set up the database and run the 10 advanced business queries using your downloaded files in **MySQL Workbench**:
+
+### Step 1: Create the Database
+Open a new query tab in MySQL Workbench and execute:
+```sql
+CREATE DATABASE PropertyManagementDB;
+USE PropertyManagementDB;
+
+### Step 2: Build Tables & Load Data
+Open and execute your downloaded table creation script to build the schema.
+
+Open your downloaded data script (Sample_Data_Inserts.sql) and run the entire file to populate the 6 relational tables with dummy data.
+
+### Step 3: Run the Business Queries
+Open your downloaded analytics script (Business_Analysis_Queries.sql).
+
+Highlight any of the 10 Advanced Business Queries (such as MoM Revenue or Revenue Leakage) and press Ctrl + Shift + Enter to execute.
+
+Review the live analytical results directly in your output grid panel.
+
+**Note: To view all business questions, query codes, and strategic management summaries instantly without running the server, open the included Property_Management_SQL_Portfolio.pdf.**
