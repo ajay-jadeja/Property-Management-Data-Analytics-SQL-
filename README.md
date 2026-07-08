@@ -85,7 +85,7 @@ Follow these simple steps to set up the database and run the 10 advanced busines
 Open a new query tab in MySQL Workbench and execute:
 ```sql
 CREATE DATABASE PropertyManagementDB;
-USE PropertyManagementDB;
+USE PropertyManagementDB; ```
 
 ### Step 2: Build Tables & Load Data
 Open and execute your downloaded table creation script to build the schema.
