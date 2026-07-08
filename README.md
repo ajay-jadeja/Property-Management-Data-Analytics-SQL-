@@ -75,28 +75,33 @@ The analytical suite in this project is built around solving these 10 distinct o
 10. **Chronic Property Maintenance Defects:** Identify properties that generate more than 5 critical maintenance requests within a single quarter, isolating systemic underlying infrastructure failures.
 
 ---
+## 📂 Project Deliverables & File Explanations
 
-Markdown
-## 🚀 Quick Start Guide (MySQL)
+Each file in this repository has a clear role in the data engineering and analytics pipeline:
 
-Follow these simple steps to set up the database and run the 10 advanced business queries using your downloaded files in **MySQL Workbench**:
+### 🛠️ 1. `Schema_Setup.sql` (Database Design)
+* **What it does:** Builds the structural backbone by creating the **6 relational tables** (`Properties`, `Units`, `Tenants`, `Leases`, `Payments`, and `Maintenance_Requests`).
+* **Key Features:** Implements strict data integrity rules using `PRIMARY KEY`, `FOREIGN KEY` constraints, cascading deletes, and `CHECK` rules to ensure accurate data tracking.
 
-### Step 1: Create the Database
-Open a new query tab in MySQL Workbench and execute:
-```sql
-CREATE DATABASE PropertyManagementDB;
-USE PropertyManagementDB; ```
+### 📊 2. `Sample_Data_Inserts.sql` (Data Ingestion)
+* **What it does:** Populates the blank tables with realistic, mathematically consistent mock records.
+* **Key Features:** Maintains perfect parent-child relationships across a realistic business timeline, modeling diverse lease cycles, rent adjustments, and tenant payment habits.
 
-### Step 2: Build Tables & Load Data
-Open and execute your downloaded table creation script to build the schema.
+### 📈 3. `Business_Analysis_Queries.sql` (Analytics Engine)
+* **What it does:** Contains production-grade SQL code written to solve **10 advanced real-world business problems**.
+* **Key Features:** Uses powerful data analysis tools like **Window Functions** (`SUM() OVER`, `LAG()`), **CTEs (Common Table Expressions)**, and complex multi-table `JOIN` operations to trace revenue leakage and rolling growth.
 
-Open your downloaded data script (Sample_Data_Inserts.sql) and run the entire file to populate the 6 relational tables with dummy data.
+### 📕 4. `Property_Management_SQL_Portfolio.pdf` (Executive Report)
+* **What it does:** A comprehensive, presentation-ready compilation of the entire project for quick review.
+* **Key Features:** Includes all 10 business problem statements, original source codes, expected output grids, and actionable management insights—no live database connection required to view.
 
-### Step 3: Run the Business Queries
-Open your downloaded analytics script (Business_Analysis_Queries.sql).
+---
 
-Highlight any of the 10 Advanced Business Queries (such as MoM Revenue or Revenue Leakage) and press Ctrl + Shift + Enter to execute.
+## 👤 Author & Copyright
 
-Review the live analytical results directly in your output grid panel.
+* **Developer:** Ajaysinh Jadeja
+* **Role:** Data Analyst / Computer Engineering Graduate
+* **Location:** Vadodara, Gujarat, India
 
-**Note: To view all business questions, query codes, and strategic management summaries instantly without running the server, open the included Property_Management_SQL_Portfolio.pdf.**
+Copyright © 2026 Ajaysinh Jadeja. All rights reserved.  
+*This project is a part of my professional data analytics portfolio. The code, database design, and analytical documentation are free to be reviewed for evaluation and educational purposes.*
